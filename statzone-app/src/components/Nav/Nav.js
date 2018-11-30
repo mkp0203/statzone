@@ -10,13 +10,17 @@ const styles = {
     }
 }
 
-const Nav = () => (
+const Nav = props => (
     <nav className="navbar" style={styles.nav}>
         <Logo
             image="images/league.png"
         ></Logo>
         <WebTitle></WebTitle>
-        <SearchBar>
+        <SearchBar
+            search={props.search}
+            handleInputChange={props.handleInputChange}
+            handleUserSearch={props.handleUserSearch}
+        >
         </SearchBar>
     </nav>
 )
