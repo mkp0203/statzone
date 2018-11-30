@@ -12,16 +12,21 @@ const styles = {
     backgroundColor: "#393f4d",
     color: "#feda6a",
     marginBottom: "40px",
-    marginTop: "40px"
+    marginTop: "40px",
+    opacity: 0.8,
+    textAlign: "center"
   },
   matchHistory: {
     height: "600px",
     backgroundColor: "#393f4d",
     color: "#feda6a",
-    marginBottom: 40
+    marginBottom: 40,
+    opacity: 0.8
   },
   footer: {
-    textAlign: "center'"
+    textAlign: "center",
+    width: "50%",
+    fontSize: 12
   }
 }
 // -----------------------------------------------------------------------------------------------------------
@@ -32,11 +37,26 @@ class App extends Component {
       <div>
         <Nav/>
         <Container>
-          <Row>
-            <Col size="md-12">
+          <Row style={styles.userInfo}>
+            <Col size="md-3">
               {/* User Specific Info Goes Here */}
               <div style={styles.userInfo}>
-              <h1>User Information Will Go Here</h1>
+              <h4>User Icon Goes Here</h4>
+              </div>
+            </Col>
+            <Col size="md-3">
+              {/* User Specific Info Goes Here */}
+              <div style={styles.userInfo}>
+              <h4>Username</h4>
+              <h4>Solo</h4>
+              <h4>Flex</h4>
+              <h4>Win/Loss Ratio</h4>
+              </div>
+            </Col>
+            <Col size="md-3">
+              {/* User Specific Info Goes Here */}
+              <div style={styles.userInfo}>
+              <h4>Rank Icon Goes Here</h4>
               </div>
             </Col>
           </Row>
@@ -50,7 +70,7 @@ class App extends Component {
           </Row>
         </Container>
         <Footer>
-          <h2 style={styles.footer}>Footer Content Goes Here</h2>
+          <p style={styles.footer}>Stat Zone isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</p>
         </Footer>
       </div>
     );
