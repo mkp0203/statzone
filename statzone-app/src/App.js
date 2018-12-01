@@ -4,9 +4,9 @@ import Nav from './components/Nav';
 import { Container, Col, Row } from './components/Grid';
 // import { UserIcon, UserName, UserRank, RankIcon } from './components/Game-Content/User-Info';
 import Footer from './components/Footer';
-// import API from './utils/LeagueAPI';
 import { UserName, UserRank } from './components/Game-Content/User-Info';
 import axios from "axios";
+import LEAGUE_API from './utils/LeagueAPI';
 
 
 // TEMPORARY STYLING HERE FOR VISUAL SEPARATION
@@ -61,6 +61,14 @@ class App extends Component {
       [name]: value
     });
   };
+
+  searchLeagueAPI = query => {
+    event.preventDefault();
+    LEAGUE_API.search(this.state.search)
+      .then(res => this.setState({ results: res.data }))
+      .catch(err => console.log(err));
+      console.log(query);
+  }
 
   
   render() {

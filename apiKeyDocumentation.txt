@@ -1,0 +1,74 @@
+API Key: 
+RGAPI-a5bf1f05-32d0-4daf-9a2d-52152fa7e2cb
+**UPDATE EVERYDAY**
+
+
+
+summonerName = ohgbaby
+summonerNameURL = Oh%20G%20Baby
+
+
+
+Summoner-V3: profile icon, summoner level, summoner id **search by name**
+https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/<summonername>?api_key=KEY
+{
+    "profileIconId": 2074,
+    "name": "Oh G Baby",
+    "summonerLevel": 62,
+    "accountId": 215947628,
+    "id": 63672321,
+    "revisionDate": 1542684580000
+}
+
+
+
+Summoner -V4:
+https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/ohgbaby?api_key=KEY
+{
+    "profileIconId": 2074,
+    "name": "Oh G Baby",
+    "puuid": "OjjJ9iV9tPzE3emQv2drUvbRcyFP3Ojtm3vwEyegKvjRjmZ7_QuqX-neG5iIOIkOYI2AwWcGCo_JJQ",
+    "summonerLevel": 62,
+    "accountId": "2f1ozXpOv62ian7HkfokaoTguR6DfatYsu_fr5yiw5pS7kw",
+    "id": "MQJ1VHEXwN4t6tvf2HJNaaxqABDUaq5HfljdL3oUPhxowR8",
+    "revisionDate": 1542684580000
+}
+
+
+
+League-V3 OR V4: This will give us RANK, LEAGUE POINTS (LP), WINS, LOSSES
+https://na1.api.riotgames.com/lol/league/v4/positions/by-summoner/{summonerid}?api_key=<key>
+[
+    {
+        "queueType": "RANKED_SOLO_5x5",
+        "summonerName": "Oh G Baby",
+        "hotStreak": false,
+        "wins": 31,
+        "veteran": false,
+        "losses": 45,
+        "rank": "III",
+        "leagueName": "Lux's Lords",
+        "inactive": false,
+        "freshBlood": false,
+        "leagueId": "05387ba0-1061-11e8-8a89-c81f66dbb56c",
+        "tier": "SILVER",
+        "summonerId": "MQJ1VHEXwN4t6tvf2HJNaaxqABDUaq5HfljdL3oUPhxowR8",
+        "leaguePoints": 34
+    },
+    {
+        "queueType": "RANKED_FLEX_SR",
+        "summonerName": "Oh G Baby",
+        "hotStreak": false,
+        "wins": 18,
+        "veteran": false,
+        "losses": 15,
+        "rank": "I",
+        "leagueName": "Draven's Executioners",
+        "inactive": false,
+        "freshBlood": false,
+        "leagueId": "8db1c270-476b-11e8-b378-c81f66dbb56c",
+        "tier": "SILVER",
+        "summonerId": "MQJ1VHEXwN4t6tvf2HJNaaxqABDUaq5HfljdL3oUPhxowR8",
+        "leaguePoints": 78
+    }
+]
