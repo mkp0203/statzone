@@ -33,17 +33,17 @@ CREATE TABLE stats(
 )
 
 CREATE TABLE stats_LeagueOfLegends(
-    id INTEGER(11) AUTO_INCREMENT NOT NULL,
+    id INTEGER(11) AUTO_INCREMENT ,
     playerName VARCHAR(100),
-    playerId INTEGER(11) NOT NULL,
-    playerLevel INTEGER(3) NOT NULL,
-    playerRank VARCHAR(50) NOT NULL,
-    playerLP INTEGER(3) NOT NULL,
+    playerId INTEGER(11) ,
+    playerLevel INTEGER(3) ,
+    playerRank VARCHAR(50) ,
+    playerLP INTEGER(3),
     gameName VARCHAR(100),
-    gameId INTEGER(3) NOT NULL,
-    win/loss FLOAT(3) NOT NULL,
+    gameId INTEGER(3),
+    win/loss FLOAT(3),
     mostPlayed VARCHAR(100),
-    matchHistoryId INTEGER(11) NOT NULL,
+    matchHistoryId INTEGER(11),
 
 )
 
@@ -60,4 +60,9 @@ CREATE TABLE matchHistory_LeagueOfLegends(
 CREATE TABLE champions_LeagueOfLegends(
 
 )
+
+
+
+INSERT INTO stats_LeagueOfLegends (playerName, playerId, gameName, gameId)
+VALUES ("name", "000", "Oh G Baby", "MQJ1VHEXwN4t6tvf2HJNaaxqABDUaq5HfljdL3oUPhxowR8");
 
