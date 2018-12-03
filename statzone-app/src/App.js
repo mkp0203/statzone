@@ -44,7 +44,7 @@ class App extends Component {
 
   handleUserSearch = event => {
     event.preventDefault();
-    this.searchAPI(this.state.search);
+    this.searchLeagueAPI(this.state.search);
   }
 
   searchAPI = query => {
