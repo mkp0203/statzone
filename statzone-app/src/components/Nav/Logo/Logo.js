@@ -4,19 +4,29 @@ import "./Logo.css";
 // you can do css in the css file or do it specifically in here
 const styles = {
     image: {
-        height: 100
+        height: 100,
+        background: "#000",
+        border: 0,
+        paddingTop: 20
     }
 }
 
 const Logo = (props) => (
-    // eventually we will need to pass the props back down to this component but for now we can manage everything here
-    <img
-        className="logo"
-        //alternatively we can do style={styles.images}
-        src={props.image}
-        alt="League of Legends"
-        style={styles.image}
-    />
+
+    <div class="dropdown">
+        <img className="btn btn-secondary dropdown-toggle logo" href="#" role="button"
+            src={props.image}
+            style={styles.image}
+            alt="League of Legends"
+            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </img>
+
+        <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a className="dropdown-item" href="#">Clash Royale</a>
+            <a className="dropdown-item" href="#">Destiny 2</a>
+            <a className="dropdown-item" href="#">Overwatch</a>
+        </div>
+    </div>
 )
 
 export default Logo;

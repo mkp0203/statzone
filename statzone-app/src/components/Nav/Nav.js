@@ -5,8 +5,8 @@ import SearchBar from './Search-Bar';
 
 const styles = {
     nav: {
-        background: "#393f4d",
-        height: 150
+        background: "#000",
+        height: 100
     }
 }
 

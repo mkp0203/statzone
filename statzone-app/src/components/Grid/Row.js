@@ -1,7 +1,7 @@
-import React from "react"; 
+import React from "react";
 
 export const Row = ({ children }) => (
-    <div className = "row justify-content-md-center">
+    <div className="row justify-content-md-center">
         {children}
     </div>
 )

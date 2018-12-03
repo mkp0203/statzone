@@ -14,7 +14,7 @@ const styles = {
 }
 
 const Footer = ({ children }) => (
-    <div className = "footer" style={styles.footerStyle}>
+    <div className="footer" style={styles.footerStyle}>
         {children}
     </div>
 )

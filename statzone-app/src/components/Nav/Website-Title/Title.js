@@ -2,13 +2,12 @@ import React from "react";
 
 const styles = {
     title: {
-        fontHeight: '40px',
-        color: "#feda6a",
+        height: 80
     }
 }
 
 const WebTitle = () => (
-    <h1 style={styles.title}>Stat Zone</h1>
+    <img src="images/statzone.png" style={styles.title}/>
 )
 
 export default WebTitle;
