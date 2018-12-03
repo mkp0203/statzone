@@ -63,7 +63,6 @@ class App extends Component {
   };
 
   searchLeagueAPI = query => {
-    event.preventDefault();
     LEAGUE_API.search(this.state.search)
       .then(res => this.setState({ results: res.data }))
       .catch(err => console.log(err));
