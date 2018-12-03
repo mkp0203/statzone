@@ -2,7 +2,7 @@ import axios from "axios";
 
 // update daily
 // current for 11/30/18
-const APIKEY = "RGAPI-a5bf1f05-32d0-4daf-9a2d-52152fa7e2cb";
+const APIKEY = "RGAPI-be94f1ae-f305-4f4d-81f6-533e1fa79034";
 
 // format: https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/<summonername>?api_key=KEY
 const BASEURL_SUMMONER_V3 = "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/";
@@ -85,7 +85,7 @@ const BASEURL_LEAGUE = "https://na1.api.riotgames.com/lol/league/v4/positions/by
 const LEAGUE_API = {
   search: function(query) {
     // will be https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/ohgbaby?api_key=RGAPI-a5bf1f05-32d0-4daf-9a2d-52152fa7e2cb
-    return axios.get(BASEURL_SUMMONER_V3 + query + APIKEY);
+    return axios.get(BASEURL_SUMMONER_V3 + query + "?api_key=" + APIKEY);
   }
 };
 
